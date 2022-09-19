@@ -3,7 +3,7 @@ import os
 
 import discord
 import random
-from discord.env import load_dotenv
+from dotenv import load_dotenv
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -43,4 +43,4 @@ async def on_message(message):
         response = random.choice(hitchhiker_quotes)
         await message.channel.send(response)
 
-client.run(MTAyMTExNDE4NzgxODIwNTI4NQ.GB3M1U.CpSDCJRmWPqMKa-v7iYvXSi72d-PG2OR5Y_Mp4)
+client.run(TOKEN)
